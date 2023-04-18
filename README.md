@@ -1,1 +1,2 @@
 # Coutries-Search-and-Select
+App written in React with css modules showing list of Countries with flags and basic information. You can use search bar to look for a given country or use a select to choose one. App is based on a free API that is visible through a use of async await function. You can choose between light and dark theme and use this app as a source of knowledge about countries population, region, capitals and flags.

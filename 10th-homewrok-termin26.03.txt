@@ -1,0 +1,22 @@
+Zadanie domowe - 10
+Where in the World? - FlagApp (100 punktów)
+🚨 ! UWAGA ! 🚨
+Nie dodajemy filtrowania ani wyszukiwania ze screenów w podstawowej wersji apki (mimo, że jest na designie), lista flag powinna zostać pobrana w całości i tak zostać (bez paginacji). Aplikacja musi być czytelna, poprawna semantycznie i względnie estetyczna - nie musi być 1 do 1 odwzorowaniem grafiki.
+
+Co powinna zawierać aplikacja, jak powinna się zachowywać?
+Po odplaneniu aplikacji pobierana jest lista państw. Tutaj jest możliwość zdobycia bonusowych punktów za 'loader' podczas pobierania danych - może to być zwykły tekst 'Loading...', może to być kręciołek, zostawiam do wyboru. Lista powinna być wyświetlona w sposób czytelny, ale nie ma konieczności odwzorowania designu 1 do 1. Należy wyświetlić tylko dane z grafiki (czyli klucz independent, który zwraca API jest nam tutaj zbędny).
+
+Do pobrania całej listy naley wykorzystać REST Countries API: https://restcountries.com/v2/all?fields=name,capital,flag,population,region
+
+Stylowanie dowolne: albo styled-componenets, CSS modules
+
+Wskazówki:
+Do pobierania danych należy wykorzystać useEffect wraz z wbudowaną w JS funkcją 'fetch' (można też skorzystać np z bilbioteki axios - dla chętnych, ale nie ma konieczności).
+Pobrana lista państw powinna być zapisana w stanie (useState) i wyświetlona za pomocą funkcji 'map'. Ustawianie stanu powinno następować w useEffect po poprawnym pobraniu danych.
+Zadania dodatkowe (20 pkt)
+Stworzenie wspomnianego wyżej Loadera - 5 pkt
+Dodanie wyszukiwarki na stronie, która będzie filtrować flagi po nazwie państwa (zgodnie z designem) - 5 pkt
+Dodanie filtrowania w tagu <select> po regionach (zgodnie z designem) - 10 pkt
+Termin:
+23.03.2023 (do północy)
+
